@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebAssembly test</title>
+    <style>
+        html {
+            min-height:100%;
+            position:relative;
+        }
+        body{
+            height:100%;
+        }
+        #canvas{
+            position:absolute;
+            top:0;
+            left:0;
+        }
+        #controls{
+            position: absolute;
+            top:0;
+            left: 0;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            width: fit-content;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <div id="controls">
+        <button id="button">Send Hello to C++</button>
+        <button id="triangle">🔺Add red triangles</button>
+        <button id="circle">🔵Add blue circles</button>
+    </div>
+    <script src="test.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
